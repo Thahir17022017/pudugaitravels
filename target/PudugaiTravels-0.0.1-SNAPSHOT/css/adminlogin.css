@@ -1,0 +1,346 @@
+@font-face {
+    font-family: "Ubuntu";
+    src: url("../font/Ubuntu/Ubuntu_Regular.ttf");
+}
+
+.loginLabels{
+	font-family:"Ubuntu";
+		
+}
+
+.#viewJnlTable>input[type='search'] {
+  border-radius: 5px;
+}
+
+.downloadLedger:hover{
+	color: purple; 
+}
+
+.updateIcon:hover{
+	color: #F97E41; 
+}
+.updateIcon2:hover{
+color: #F97E41; 
+font-size:20px;
+}
+
+.printTable:hover{
+	color:purple;
+}
+
+.homeColor{
+	color:black;
+}
+.update:hover{
+	color: #F97E41; 
+    letter-spacing: 2px;
+}
+
+.delete:hover{
+	color:red;
+}
+
+.navFonts{
+	font-family:"Ubuntu";
+}
+
+.btnHover:hover{
+	color:white;
+}
+
+/*.pagTable{
+	width:600px;
+}*/
+
+.tbColWidth{
+	width:300px;
+}
+.cumRatesBtn{
+	position:relative;
+	top:67px;
+}
+.pudubar{
+    background-color: #072F41;
+    z-index: 999999;
+}
+
+.form-header{
+    position:relative;
+    top:-40px;
+}
+
+.shadow-card{
+    box-shadow: 5px 5px 14px -2px rgba(0,0,0,0.99);
+  }
+  
+.shadow-card-form{
+    box-shadow: 5px 5px 14px -2px rgba(0,0,0,0.99);
+    border-radius:20px;
+ }  
+
+  .lds-facebook {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+  }
+  .lds-facebook div {
+    display: inline-block;
+    position: absolute;
+    left: 6px;
+    width: 13px;
+    background: #072F41;
+    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  }
+  .lds-facebook div:nth-child(1) {
+    left: 6px;
+    animation-delay: -0.24s;
+  }
+  .lds-facebook div:nth-child(2) {
+    left: 26px;
+    animation-delay: -0.12s;
+  }
+  .lds-facebook div:nth-child(3) {
+    left: 45px;
+    animation-delay: 0;
+  }
+  @keyframes lds-facebook {
+    0% {
+      top: 6px;
+      height: 51px;
+    }
+    50%, 100% {
+      top: 19px;
+      height: 26px;
+    }
+  }
+  
+  input{
+  border-bottom: 2px solid #072F41;
+    -webkit-box-shadow: 0 2px 0 0 #072F41;
+    box-shadow: 0 2px 0 0 #072F41; 
+  }
+  
+  #form4:focus{
+  border-bottom: 2px solid #072F41;
+    -webkit-box-shadow: 0 2px 0 0 #072F41;
+    box-shadow: 0 2px 0 0 #072F41; 
+  }
+  
+ #form2:focus{
+  border-bottom: 2px solid #072F41;
+    -webkit-box-shadow: 0 2px 0 0 #072F41;
+    box-shadow: 0 2px 0 0 #072F41; 
+  }
+
+  
+  
+  .form-control,.form-control:focus
+  {
+      color: #072F41;
+  }
+  
+  .footerColor
+  {
+    background-color:#072F41;
+  }
+  
+ @keyframes lds-spinner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes lds-spinner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+@keyframes lds-rolling {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@-webkit-keyframes lds-rolling {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.lds-rolling {
+  position: relative;
+}
+.lds-rolling div,
+.lds-rolling div:after {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 4px solid #098f9b;
+  border-top-color: transparent;
+  border-radius: 50%;
+}
+.lds-rolling div {
+  -webkit-animation: lds-rolling 1s linear infinite;
+  animation: lds-rolling 1s linear infinite;
+  top:40px;
+  left:150px;
+}
+.lds-rolling div:after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.lds-rolling {
+  width: 60px !important;
+  height: 60px !important;
+  -webkit-transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+  transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+}
+
+.sameline{
+	position:relative;
+	bottom:50px;
+	left:220px;
+}
+
+
+ #empUser:focus{
+  border-bottom: 2px solid #072F41;
+    -webkit-box-shadow: 0 2px 0 0 #072F41;
+    box-shadow: 0 2px 0 0 #072F41; 
+  }
+  
+ #empPwd:focus{
+  border-bottom: 2px solid #072F41;
+    -webkit-box-shadow: 0 2px 0 0 #072F41;
+    box-shadow: 0 2px 0 0 #072F41; 
+  }
+
+#empUserLabel{
+	color: #072F41; 
+}
+
+#empPwdLabel{
+	color: #072F41;
+}
+
+.md-form{
+	color: #072F41;
+}
+  
+ .form-control,.form-control:focus
+ {
+      color: #072F41;
+ }
+ 
+.destnCtry{
+	top:65px;
+}
+
+.checkPairBtn{
+	margin-top:72px;
+}
+
+.material-switch > input[type="checkbox"] {
+    display: none;   
+}
+
+.label-primary {
+    background-color: #428BCA;
+}
+
+.material-switch > label {
+    cursor: pointer;
+    height: 0px;
+    position: relative; 
+    width: 40px;  
+}
+
+.material-switch > label::before {
+    background: rgb(0, 0, 0);
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    content: '';
+    height: 16px;
+    margin-top: -8px;
+    position:absolute;
+    opacity: 0.3;
+    transition: all 0.4s ease-in-out;
+    width: 40px;
+}
+.material-switch > label::after {
+    background: rgb(255, 255, 255);
+    border-radius: 16px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    content: '';
+    height: 24px;
+    left: -4px;
+    margin-top: -8px;
+    position: absolute;
+    top: -4px;
+    transition: all 0.3s ease-in-out;
+    width: 24px;
+}
+.material-switch > input[type="checkbox"]:checked + label::before {
+    background: inherit;
+    opacity: 0.5;
+}
+.material-switch > input[type="checkbox"]:checked + label::after {
+    background: inherit;
+    left: 20px;
+}
+
+
+
+
+
+
+
+
+
+ 
+ /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+	.configMb{
+		margin-left:0;
+	}
+	
+	.pagTable{
+		width:320px;
+	}
+	
+	.tbColWidth{
+	width:160px;
+	}
+	
+	.cumRatesBtnMbl{
+	   position:relative;
+		top:0px;
+	}
+	
+	.destnCtryMbl{
+	top:0px;
+	}
+	
+	.checkPairBtnMbl{
+	 margin-top:10px;
+	}
+	
+} 
+ 

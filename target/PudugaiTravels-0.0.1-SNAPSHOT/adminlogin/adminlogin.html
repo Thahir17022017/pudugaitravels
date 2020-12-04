@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title id="title">Admin Login</title>
+    <meta name="author" content="https://www.pudugaitravels.com" />
+    <meta name="publisher" content="https://www.pudugaitravels.com" />
+    <meta name="copyright" content="Copyright PudugaiTravels.">
+    <meta name="language" content="EN">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="30 days">
+    <meta name="document-classification" content="Internet">
+    <meta name="document-type" content="Public">
+    <meta name="document-rating" content="Safe for Kids">
+    <meta name="document-distribution" content="Global">
+    <meta name="geo.region" content="IN-TN" />
+    <meta name="geo.placename" content="Pudukkottai" />
+    <meta name="rating" content="General" />
+    <meta http-equiv="refresh" content="1800">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <!-- favicons for IE-->
+    <link rel="shortcut icon" type="image/x-icon" href="icons/favicon.ico" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+
+    <!-- animate css -->
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" type="text/css" href="css/loading.css"/> 
+    <link rel="stylesheet" type="text/css" href="css/loading-btn.css"/>
+	
+	
+    <link rel="stylesheet" type="text/css" href="css/flatpickr.css">
+	<link rel="stylesheet" type="text/css" href="css/material_green.css">
+
+	<link rel="stylesheet" type="text/css" href="datatables/datatables.css">
+	
+	<link rel="stylesheet" type="text/css" href="css/indeterminateprogress.css">
+
+	<link rel="stylesheet" type="text/css" href="css/print.min.css">
+	
+	
+	
+    <!-- styles -->
+    <link rel="stylesheet" href="css/adminlogin.css">
+   
+
+    
+  </head>
+<body id="bodyContainer" style="height:100%;" onclick="closeDropDown()">
+
+<div id="admin">
+    <nav class="navbar fixed-top navbar-expand-lg scrolling-navbar shadow-card pudubar">
+        <a class="navbar-brand" href="#"> 
+            <img src="icons/actualogo.png" height="60px" width="150px" alt="base image">
+        </a> 
+        
+        
+    </nav>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4">
+            </div>
+            <div class="col-sm-4" style="margin-top:200px;">
+                <!--Form with header-->
+                <div class="card shadow-card" style="border-radius:10px;">
+                    <div class="card-block p-3">
+
+                        <!--Header-->
+                        <div class="form-header shadow-card" style="padding:20px;background-color:#072F41;border-radius:10px;">
+                            <h3 style="color:white;" class="loginLabels"> <i class="fa fa-lock" style="color:white;"></i> &nbsp;Login :</h3>
+                            
+                        </div>
+
+                        <!--Body-->
+                        <form>
+                        <div class="md-form">
+                            <i class="fa fa-envelope prefix" style="color:#072F41;"></i>
+                            <input type="text" style="color:#072F41;" id="form2" class="form-control">
+                            <label for="form2" style="color:#072F41;" class="loginLabels">Username :</label>
+                        </div>
+
+                        <div class="md-form">
+                            <i class="fa fa-lock prefix" style="color:#072F41;"></i>
+                            <input type="password" id="form4" class="form-control">
+                            <label for="form4" style="color:#072F41;" class="loginLabels">Password :</label>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="button" class="btn btnHover loginLabels" style="background-color:#072F41;border-radius:30px;width:200px;" onclick="login()">Login</button>
+                        </div>
+                        
+                        <br>
+                        <div class="text-center">
+                             <span id="errorMsg" style="color:red;visibility:hidden;">Username is not correct</span>
+                        </div>
+                        <div class="text-center">
+                            <div id="progressBar" class="lds-facebook" style="visibility:hidden;"><div></div><div></div><div></div></div>
+                        </div>
+                        </form>
+                        
+
+
+                    </div>
+
+                   
+
+                </div>
+                <!--/Form with header-->
+            </div>
+            <div class="col-sm-4">
+
+            </div>  
+        </div>  
+    </div>
+    
+
+
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<footer class="page-footer mt-5 footerColor" style="position:relative;top:1000px;">
+
+    <div class="footer-copyright py-3 text-center">
+        &#169; 2018 - 19 Copyright:
+        <a href="#">Pudugai Travels</a> | <a target="_blank" href="https://www.google.com/maps/search/?api=1&query=Fz+Systems+Trichy" style="font-size:14px">Powered by Fz Systems,Trichy</a>
+    </div>
+</footer>    
+
+  <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    
+    <script type="text/javascript" src="js/flatpickr.js"></script>
+    
+     <script src="js/big.js"></script>
+   
+	<script type="text/javascript" charset="utf8" src="datatables/datatables.js"></script>
+	<script src="js/print.min.js"></script>
+    <script>
+            wow = new WOW().init();
+
+           
+           
+           
+    		
+		
+  
+            
+            
+    </script>
+    <script src="js/adminlogin.js"></script>
+</body>
+</html>

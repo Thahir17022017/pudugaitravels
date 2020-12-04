@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>PudugaiTravelsProd</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    
+  </welcome-file-list>
+  
+   <session-config>
+		<session-timeout>30</session-timeout>
+  </session-config>
+  
+ <servlet>
+        <servlet-name>SendQueryHandler</servlet-name>
+        <servlet-class>com.pudugaitravels.ui.EmailHandler</servlet-class>
+</servlet>
+<servlet-mapping>
+        <servlet-name>SendQueryHandler</servlet-name>
+        <url-pattern>/v1/sendquery</url-pattern>
+</servlet-mapping> 
+
+<servlet>
+        <servlet-name>AdminLoginUiHandler</servlet-name>
+        <servlet-class>com.pudugaitravels.adminhandlers.IntialLoginHandler</servlet-class>
+</servlet>
+<servlet-mapping>
+        <servlet-name>AdminLoginUiHandler</servlet-name>
+        <url-pattern>/pudugaiadmin</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+        <servlet-name>AdminLoginHandler</servlet-name>
+        <servlet-class>com.pudugaitravels.adminhandlers.LoginHandler</servlet-class>
+</servlet>
+<servlet-mapping>
+        <servlet-name>AdminLoginHandler</servlet-name>
+        <url-pattern>/login</url-pattern>
+</servlet-mapping>  
+
+
+<servlet>
+        <servlet-name>AdminLogoutHandler</servlet-name>
+        <servlet-class>com.pudugaitravels.adminhandlers.LogoutHandler</servlet-class>
+</servlet>
+<servlet-mapping>
+        <servlet-name>AdminLogoutHandler</servlet-name>
+        <url-pattern>/logout</url-pattern>
+</servlet-mapping> 
+
+<servlet>
+        <servlet-name>ReadEmployeeHandler</servlet-name>
+        <servlet-class>com.pudugaitravels.employeehandlers.ReadEmployee</servlet-class>
+</servlet>
+<servlet-mapping>
+        <servlet-name>ReadEmployeeHandler</servlet-name>
+        <url-pattern>/employees</url-pattern>
+</servlet-mapping>
+
+<servlet>
+        <servlet-name>AddEmployeeHandler</servlet-name>
+        <servlet-class>com.pudugaitravels.employeehandlers.AddEmployee</servlet-class>
+</servlet>
+<servlet-mapping>
+        <servlet-name>AddEmployeeHandler</servlet-name>
+        <url-pattern>/addemployee</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+        <servlet-name>UpdateEmployeeHandler</servlet-name>
+        <servlet-class>com.pudugaitravels.employeehandlers.UpdateEmployee</servlet-class>
+</servlet>
+<servlet-mapping>
+        <servlet-name>UpdateEmployeeHandler</servlet-name>
+        <url-pattern>/updateemployee</url-pattern>
+</servlet-mapping>
+
+<servlet>
+        <servlet-name>DeleteEmployeeHandler</servlet-name>
+        <servlet-class>com.pudugaitravels.employeehandlers.DeleteEmployee</servlet-class>
+</servlet>
+<servlet-mapping>
+        <servlet-name>DeleteEmployeeHandler</servlet-name>
+        <url-pattern>/deleteemployee</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+        <servlet-name>HomePageHandler</servlet-name>
+        <servlet-class>com.pudugaitravels.adminhandlers.HomePageHandler</servlet-class>
+</servlet>
+<servlet-mapping>
+        <servlet-name>HomePageHandler</servlet-name>
+        <url-pattern>/home</url-pattern>
+</servlet-mapping>
+
+<servlet>
+        <servlet-name>ReadAccountsHandler</servlet-name>
+        <servlet-class>com.pudugaitravels.accounthandlers.ReadAccounts</servlet-class>
+</servlet>
+<servlet-mapping>
+        <servlet-name>ReadAccountsHandler</servlet-name>
+        <url-pattern>/accounts</url-pattern>
+</servlet-mapping> 
+
+<servlet>
+        <servlet-name>AddAccountHandler</servlet-name>
+        <servlet-class>com.pudugaitravels.accounthandlers.AddAccount</servlet-class>
+</servlet>
+<servlet-mapping>
+        <servlet-name>AddAccountHandler</servlet-name>
+        <url-pattern>/addaccount</url-pattern>
+</servlet-mapping>
+
+<servlet>
+        <servlet-name>UpdateAccountHandler</servlet-name>
+        <servlet-class>com.pudugaitravels.accounthandlers.UpdateAccount</servlet-class>
+</servlet>
+<servlet-mapping>
+        <servlet-name>UpdateAccountHandler</servlet-name>
+        <url-pattern>/updateaccount</url-pattern>
+</servlet-mapping> 
+
+<servlet>
+        <servlet-name>DeleteAccountHandler</servlet-name>
+        <servlet-class>com.pudugaitravels.accounthandlers.DeleteAccount</servlet-class>
+</servlet>
+<servlet-mapping>
+        <servlet-name>DeleteAccountHandler</servlet-name>
+        <url-pattern>/deleteaccount</url-pattern>
+</servlet-mapping>
+
+<servlet>
+        <servlet-name>RatesUIHandler</servlet-name>
+        <servlet-class>com.pudugaitravels.ratesuihandler.ConfigRatesUI</servlet-class>
+</servlet>
+<servlet-mapping>
+        <servlet-name>RatesUIHandler</servlet-name>
+        <url-pattern>/configrates</url-pattern>
+</servlet-mapping> 
+
+<servlet>
+        <servlet-name>CheckRatesUIHandler</servlet-name>
+        <servlet-class>com.pudugaitravels.ratesuihandler.CheckRatesUIHandler</servlet-class>
+</servlet>
+<servlet-mapping>
+        <servlet-name>CheckRatesUIHandler</servlet-name>
+        <url-pattern>/checkrateui</url-pattern>
+</servlet-mapping> 
+
+<servlet>
+        <servlet-name>CumHourlyUIHandler</servlet-name>
+        <servlet-class>com.pudugaitravels.ratesuihandler.CheckCumRatesHourly</servlet-class>
+</servlet>
+<servlet-mapping>
+        <servlet-name>CumHourlyUIHandler</servlet-name>
+        <url-pattern>/cumhourlyrate</url-pattern>
+</servlet-mapping>
+
+<servlet>
+        <servlet-name>ShowCurrencyConversionUIHandler</servlet-name>
+        <servlet-class>com.pudugaitravels.ratesuihandler.ShowCurrencyConversionUi</servlet-class>
+</servlet>
+<servlet-mapping>
+        <servlet-name>ShowCurrencyConversionUIHandler</servlet-name>
+        <url-pattern>/showcurrconversion</url-pattern>
+</servlet-mapping>
+
+<servlet>
+        <servlet-name>CurrencyConversionUIHandler</servlet-name>
+        <servlet-class>com.pudugaitravels.ratesuihandler.CurrencyPairConversion</servlet-class>
+</servlet>
+<servlet-mapping>
+        <servlet-name>CurrencyConversionUIHandler</servlet-name>
+        <url-pattern>/currpairconversion</url-pattern>
+</servlet-mapping> 
+
+
+<servlet>
+        <servlet-name>ReadJournal</servlet-name>
+        <servlet-class>com.pudugaitravels.journaluihandler.ReadJournal</servlet-class>
+</servlet>
+<servlet-mapping>
+        <servlet-name>ReadJournal</servlet-name>
+        <url-pattern>/readjournal</url-pattern>
+</servlet-mapping> 
+
+<servlet>
+        <servlet-name>PostTransaction</servlet-name>
+        <servlet-class>com.pudugaitravels.journaluihandler.PostJournal</servlet-class>
+</servlet>
+<servlet-mapping>
+        <servlet-name>PostTransaction</servlet-name>
+        <url-pattern>/posttransaction</url-pattern>
+</servlet-mapping>  
+
+<servlet>
+        <servlet-name>DeleteTransaction</servlet-name>
+        <servlet-class>com.pudugaitravels.journaluihandler.DeleteJournal</servlet-class>
+</servlet>
+<servlet-mapping>
+        <servlet-name>DeleteTransaction</servlet-name>
+        <url-pattern>/deltransaction</url-pattern>
+</servlet-mapping>
+
+<servlet>
+        <servlet-name>UpdateTransaction</servlet-name>
+        <servlet-class>com.pudugaitravels.journaluihandler.UpdateJournal</servlet-class>
+</servlet>
+<servlet-mapping>
+        <servlet-name>UpdateTransaction</servlet-name>
+        <url-pattern>/updtransaction</url-pattern>
+</servlet-mapping>
+
+<servlet>
+        <servlet-name>ViewJournal</servlet-name>
+        <servlet-class>com.pudugaitravels.journaluihandler.ViewJournal</servlet-class>
+</servlet>
+<servlet-mapping>
+        <servlet-name>ViewJournal</servlet-name>
+        <url-pattern>/loadjournalview</url-pattern>
+</servlet-mapping>   
+
+<servlet>
+        <servlet-name>AddUpdJournalView</servlet-name>
+        <servlet-class>com.pudugaitravels.journaluihandler.AddUpdJournalView</servlet-class>
+</servlet>
+<servlet-mapping>
+        <servlet-name>AddUpdJournalView</servlet-name>
+        <url-pattern>/loadaddupdjournalview</url-pattern>
+</servlet-mapping>
+
+<servlet>
+        <servlet-name>SearchJournal</servlet-name>
+        <servlet-class>com.pudugaitravels.journaluihandler.SearchJournal</servlet-class>
+</servlet>
+<servlet-mapping>
+        <servlet-name>SearchJournal</servlet-name>
+        <url-pattern>/searchjournal</url-pattern>
+</servlet-mapping>  
+
+
+<servlet>
+        <servlet-name>LoadJournal</servlet-name>
+        <servlet-class>com.pudugaitravels.journaluihandler.LoadJournal</servlet-class>
+</servlet>
+<servlet-mapping>
+        <servlet-name>LoadJournal</servlet-name>
+        <url-pattern>/loadjournalconfig</url-pattern>
+</servlet-mapping>  
+
+
+<servlet>
+        <servlet-name>LedgerView</servlet-name>
+        <servlet-class>com.pudugaitravels.ledgerhandler.LedgerView</servlet-class>
+</servlet>
+<servlet-mapping>
+        <servlet-name>LedgerView</servlet-name>
+        <url-pattern>/ledger</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+        <servlet-name>SearchLedger</servlet-name>
+        <servlet-class>com.pudugaitravels.ledgerhandler.SearchLedger</servlet-class>
+</servlet>
+<servlet-mapping>
+        <servlet-name>SearchLedger</servlet-name>
+        <url-pattern>/searchledger</url-pattern>
+</servlet-mapping> 
+
+<servlet>
+        <servlet-name>DownloadReport</servlet-name>
+        <servlet-class>com.pudugaitravels.report.DownloadLedger</servlet-class>
+</servlet>
+<servlet-mapping>
+        <servlet-name>DownloadReport</servlet-name>
+        <url-pattern>/downloadreport</url-pattern>
+</servlet-mapping> 
+
+<servlet>
+        <servlet-name>TrialBalance</servlet-name>
+        <servlet-class>com.pudugaitravels.balancesheet.TrialBalance</servlet-class>
+</servlet>
+<servlet-mapping>
+        <servlet-name>TrialBalance</servlet-name>
+        <url-pattern>/readtrialbalance</url-pattern>
+</servlet-mapping>  
+
+<servlet>
+        <servlet-name>Income</servlet-name>
+        <servlet-class>com.pudugaitravels.balancesheet.Income</servlet-class>
+</servlet>
+<servlet-mapping>
+        <servlet-name>Income</servlet-name>
+        <url-pattern>/readincome</url-pattern>
+</servlet-mapping>     
+             
+
+<servlet>
+        <servlet-name>CloseAccounts</servlet-name>
+        <servlet-class>com.pudugaitravels.accounthandlers.CloseAccounts</servlet-class>
+</servlet>
+<servlet-mapping>
+        <servlet-name>CloseAccounts</servlet-name>
+        <url-pattern>/closeaccounts</url-pattern>
+</servlet-mapping> 
+
+<servlet>
+        <servlet-name>DownloadJournal</servlet-name>
+        <servlet-class>com.pudugaitravels.report.DownloadJournal</servlet-class>
+</servlet>
+<servlet-mapping>
+        <servlet-name>DownloadJournal</servlet-name>
+        <url-pattern>/downloadjournal</url-pattern>
+</servlet-mapping> 
+
+<servlet>
+        <servlet-name>ActivateUser</servlet-name>
+        <servlet-class>com.pudugaitravels.employeehandlers.ActivateUser</servlet-class>
+</servlet>
+<servlet-mapping>
+        <servlet-name>ActivateUser</servlet-name>
+        <url-pattern>/activate</url-pattern>
+</servlet-mapping> 
+
+</web-app>
