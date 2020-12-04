@@ -1,0 +1,584 @@
+
+@font-face {
+    font-family: "Concert_One";
+    src: url("../font/Concert_One/ConcertOne-Regular.ttf");
+  }
+
+  @font-face {
+    font-family: "Roboto_Bold";
+    src: url("../font/roboto/Roboto-Bold.ttf");
+  }
+  
+  @font-face {
+    font-family: "Roboto";
+    src: url("../font/roboto/Roboto-Regular.ttf");
+  }  
+
+  @font-face {
+    font-family: "Playfair_Display";
+    src: url("../font/Playfair_Display/PlayfairDisplay-Regular.ttf");
+  }   
+
+  body {
+    
+    scroll-behavior: smooth;
+  }
+
+  section{
+    width:100%;
+    height:100vh;
+    
+
+  }
+
+  .wave{
+    position:relative;
+    
+  }
+
+  .wave:before{
+    content: "";
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:215px;
+    background: url(../img/wave.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+  }
+
+  /* section.slantedDiv1{
+    position:relative;
+    overflow:hidden;
+    background: url(../img/airport_indoors.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+
+section.slantedDiv1:before{
+    content:'';
+    position: absolute;
+    top:100%;
+    bottom:-50%;
+    width:100%;
+    height:100%;
+    background:#fff;
+    transform-origin: right;
+    transform: skewY(4deg);
+    
+  }
+
+  section.slantedDiv1:after{
+    content:'';
+    position: absolute;
+    bottom:100%;
+    left:0%;
+    width:100%;
+    height:100%;
+    background:#fff;
+    transform-origin: left;
+    transform: skewY(4deg);
+    
+    
+  }  */
+
+.emptyContainer{
+	height:400px;
+}
+
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 100px;
+  height: 100px;/*64*/
+}
+.lds-ripple div {
+  position: absolute;
+  border: 6px solid #ffffff;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+
+@keyframes lds-ripple {
+  0% {
+    top: 50px;
+    left: 50px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: -1px;
+    left: -1px;
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+  }
+}
+
+
+
+  section.slantedDiv1{
+    position:relative;
+    overflow:hidden;
+    /* background: url(../img/airport_indoors.png); */
+    /* background: url(airport_indoors.png); */
+    /* background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat; */
+    transition: 0s linear;
+    transition-property: background-position;
+  }
+
+section.slantedDiv1:before{
+    content:'';
+    position: absolute;
+    bottom:100%;
+    right:0%;
+    width:100%;
+    height:100%;
+    background:#fff;
+    transform-origin: right;
+    transform: skewY(-4deg);
+    
+  }
+
+  section.slantedDiv1:after{
+    content:'';
+    position: absolute;
+    bottom:-75%;
+    right:0;
+    width:100%;
+    height:100%;
+    background:#fff;
+    transform-origin: bottom;
+    transform: skewY(-4deg);
+    
+  } 
+
+  section.slantedDiv2{
+    position:relative;
+    overflow:hidden;
+    /* background: url(../img/money_transfer.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat; */
+    transition: 0s linear;
+    transition-property: background-position;
+  }
+
+section.slantedDiv2:before{
+    content:'';
+    position: absolute;
+    bottom:100%;
+    right:0%;
+    width:100%;
+    height:100%;
+    background:#fff;
+    transform-origin: right;
+    transform: skewY(-4deg);
+    
+  }
+
+  section.slantedDiv2:after{
+    content:'';
+    position: absolute;
+    bottom:-75%;
+    right:0;
+    width:100%;
+    height:100%;
+    background:#fff;
+    transform-origin: bottom;
+    transform: skewY(-4deg);
+    
+  } 
+
+  section.slantedDiv3{
+    position:relative;
+    overflow:hidden;
+    /* background: url(../img/reception.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat; */
+    transition: 0s linear;
+    transition-property: background-position;
+  }
+
+section.slantedDiv3:before{
+    content:'';
+    position: absolute;
+    bottom:100%;
+    right:0%;
+    width:100%;
+    height:100%;
+    background:#fff;
+    transform-origin: right;
+    transform: skewY(-4deg);
+    
+  }
+
+  section.slantedDiv3:after{
+    content:'';
+    position: absolute;
+    bottom:-75%;
+    right:0;
+    width:100%;
+    height:100%;
+    background:#fff;
+    transform-origin: bottom;
+    transform: skewY(-4deg);
+    
+  } 
+
+  /* section.slantedDiv2{
+    position:relative;
+    overflow:hidden;
+    background: url(../img/money_transfer.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+
+section.slantedDiv2:before{
+    content:'';
+    position: absolute;
+    bottom:100%;
+    right:0%;
+    width:100%;
+    height:100%;
+    background:#fff;
+    transform-origin: right;
+    transform: skewY(-4deg);
+    
+  }
+
+  section.slantedDiv2:after{
+    content:'';
+    position: absolute;
+    bottom:-75%;
+    right:0;
+    width:100%;
+    height:100%;
+    background:#fff;
+    transform-origin: bottom;
+    transform: skewY(-4deg);
+    
+  }  
+
+  section.slantedDiv3{
+    position:relative;
+    overflow:hidden;
+    background: url(../img/reception.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  } */
+
+  
+
+  .main-heading{
+    font-family: "Concert_One";
+    font-size:40px;
+    color:#1e1e1e;
+  }
+
+  .sub-heading{
+    font-family: "Concert_One";
+    font-size:30px;
+    color:#1e1e1e;
+  }
+
+  .contactHeadings{
+    font-family: "Concert_One";
+    font-size:25px;
+    color:#1e1e1e;
+  }
+
+  .para-text1{
+    font-family:"Playfair_Display";
+    color:#1e1e1e;
+  }
+
+  .para-text2{
+    font-family:"Roboto";
+    font-size:16px;
+    color:#1e1e1e;
+  }
+
+
+
+  .enquiryForm{
+    font-family: "Concert_One";
+    font-size:25px;
+  }
+  
+  .enquiryFormMsg{
+  	font-family: "Concert_One";
+  	font-size: 20px;
+  }
+
+  .enquiryFormSend
+  {
+    font-family: "Concert_One";
+    font-size:18px;
+    letter-spacing: 2px;
+    
+  }
+
+  
+
+  .airlineTitle:after{
+ 
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    /* margin: 0 auto; This will center the border. */
+    width: 20%; /* Change this to whatever width you want. */
+    padding-top: 8px; /* This creates some space between the element and the border. */
+    border-bottom: 8px solid #F97E41; /* This creates the border. Replace black with whatever color you want. */
+   
+  }
+  .moneytrTitle:after{
+   content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /*This will center the border.*/
+    width: 10%; /* Change this to whatever width you want. */
+    padding-top: 8px; /* This creates some space between the element and the border. */
+    border-bottom: 8px solid #F97E41; /* This creates the border. Replace black with whatever color you want. */
+  
+  }
+  
+  .lineColor{
+    
+    border-bottom: 8px solid #F97E41;
+    transform-origin: bottom right;
+    -ms-transform: skew(-30deg, 0deg);
+    -webkit-transform: skew(-30deg, 0deg);
+    transform: skew(-30deg, 0deg);
+    
+  }
+
+  .footerColor{
+    background-color:#072F41;
+  }
+
+  .custom-font {
+    font-family: "Concert_One";
+    font-size: 20px;
+  }
+
+  .form-dark .md-form label 
+  {
+    color: #fff;
+    font-size: 16px; 
+  }
+  
+  .form-dark input[type=text]:focus:not([readonly]) {
+    border-bottom: 2px solid #F97E41;
+    -webkit-box-shadow: 0 2px 0 0 #F97E41;
+    box-shadow: 0 2px 0 0 #F97E41; 
+    font-family: "Roboto";
+  }
+  
+  .form-dark input[type=text]:focus:not([readonly]) + label {
+    color: #fff; 
+    
+  }
+  
+  .form-dark textarea.md-textarea:focus:not([readonly]) + label {
+      color: #fff;
+  
+   }
+
+   .form-dark textarea.md-textarea:focus:not([readonly]) {
+      border-bottom: 2px solid #F97E41;
+      box-shadow: 0 2px 0 0 #F97E41;
+      font-family: "Roboto";
+      
+   }
+
+  .form-dark textarea.md-textarea  {
+      color: #fff;
+  }
+  
+  .form-dark .form-control, .form-dark .form-control:focus {
+      color: #fff;
+  }
+
+  .btnColor{
+      background-color:#F97E41;
+      border-radius: 30px;
+      
+  }
+  
+
+  .custom-font-color{
+    color: white; 
+  }
+
+  .custom-font-color:hover{
+    color: #F97E41; 
+    letter-spacing: 2px;
+    
+    
+  }
+
+  .navbar-toggler-icon{
+    color: #1e1e1e; 
+  }
+ 
+
+
+  
+.full-screen {
+    position:relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:680px;
+    width:100%;
+    background-image: url(../img/bluesky.png);
+}
+
+
+
+
+.maskcloud{
+    top:0;
+    left:0;
+    width:100%;
+    height: 680px;
+    background:url(../img/cloud.png);
+    animation: animate 60s linear infinite;
+}
+
+.plane{
+ 
+    top:0;
+    left:0;
+    
+    width:100%;
+    height: 680px;
+    background:url(../img/airplane.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    animation-delay:4s;
+    /* visibility: hidden; */
+    /* z-index:-3; */
+  }
+
+@keyframes animate{
+
+    0%{
+      background-position: 0px;
+  
+    }
+    100%{
+      background-position: 5440px;
+    }
+}
+
+#plane{
+	
+    animation-duration: 8s;
+}
+
+#ticketContainer{
+  animation-duration: 4s;
+}
+
+#moneyContainer{
+  animation-duration: 4s;
+}
+
+.servDesc{
+    font-size: 30px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    text-shadow: 0 5px 10px rgba(0,0,0,1);
+    mix-blend-mode: luminosity;
+    font-family: "Roboto_Bold";
+    border: 2px solid white;
+    padding:3px;
+   
+}
+
+
+  
+
+
+
+.navbar {
+    /* background-color: #263238; */
+    background-color: #072F41;
+}
+
+.top-nav-collapse {
+    background-color:#072F41;
+}
+
+
+.shadow-card{
+    box-shadow: 5px 5px 14px -2px rgba(0,0,0,0.99);
+  }
+
+.responsive {
+    width: 100%;
+    box-shadow: 5px 5px 14px -2px rgba(0,0,0,0.99);
+}
+
+
+
+
+
+.shadow-card-white{
+    box-shadow: 5px 5px 14px -2px  rgba(255, 255, 255, 0.5);
+  }
+
+.frameMob
+{
+ width:600px;
+ height:450px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+	.frameMob{
+		width:340px;
+	}
+	
+	.plane{
+ 
+    top:0;
+    left:0;
+    
+    width:360px;
+    height: 680px;
+    background:url(../img/plane2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    /* visibility: hidden; */
+    /* z-index:-3; */
+  }
+	
+}
+
+
+
+
+
+
